@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сообщество - Волонтёрское приложение</title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <header class="app-header">
+        <h1>Сообщество</h1>
+        <nav class="navigation">
+            <a href="#home" class="nav-link active">Главная</a>
+            <a href="#search" class="nav-link">Поиск</a>
+            <a href="#projects" class="nav-link">Проекты</a>
+            <a href="#profile" class="nav-link">Профиль</a>
+        </nav>
+    </header>
+
+    <main class="app-content">
+        <section id="home" class="section active">
+            <h2>Добро пожаловать в приложение для волонтёрства</h2>
+            <p>Найдите подходящую организацию и начните помогать!</p>
+            
+            <div class="organization-card">
+                <h3>Детский центр "Светлое"</h3>
+                <p>📍 2.3 км от вас</p>
+                <p>⭐ 4.8 (127 отзывов)</p>
+                <p>📅 Волонтёрство: 15.03.2024</p>
+                <button class="btn-primary">Подробнее</button>
+            </div>
+
+            <div class="organization-card">
+                <h3>Приют для животных "Домик"</h3>
+                <p>📍 1.1 км от вас</p>
+                <p>⭐ 4.9 (89 отзывов)</p>
+                <p>📅 Помощь: Ежедневно</p>
+                <button class="btn-primary">Подробнее</button>
+            </div>
+        </section>
+
+        <section id="search" class="section">
+            <h2>Поиск организаций</h2>
+            <div class="search-filters">
+                <label>Категории:</label>
+                <div class="filter-options">
+                    <input type="checkbox" id="children" checked>
+                    <label for="children">Дети</label>
+                    <input type="checkbox" id="elderly">
+                    <label for="elderly">Пожилые</label>
+                    <input type="checkbox" id="animals" checked>
+                    <label for="animals">Животные</label>
+                    <input type="checkbox" id="environment">
+                    <label for="environment">Экология</label>
+                    <input type="checkbox" id="education">
+                    <label for="education">Образование</label>
+                </div>
+
+                <label>Сортировка:</label>
+                <select class="sort-select">
+                    <option>По рейтингу</option>
+                    <option>По близости</option>
+                    <option>По новизне</option>
+                </select>
+
+                <label>Расстояние:</label>
+                <div class="distance-filters">
+                    <button class="btn-secondary">5 км</button>
+                    <button class="btn-secondary active">10 км</button>
+                    <button class="btn-secondary">20 км</button>
+                </div>
+            </div>
+
+            <div class="organization-list">
+                <!-- Список организаций будет добавлен через JavaScript -->
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Волонтёрские проекты</h2>
+            <div class="project-card">
+                <h3>Работа с детьми в библиотеке</h3>
+                <p>📅 Дата: 18.03.2024</p>
+                <p>🕒 Время: 14:00 - 16:00</p>
+                <p>👥 Требуется: 3 человека</p>
+                <button class="btn-primary">Подать заявку</button>
+            </div>
+        </section>
+
+        <section id="profile" class="section">
+            <h2>Ваш профиль</h2>
+            <div class="user-info">
+                <p>👤 Имя: Алексей Петров</p>
+                <p>📧 Email: alexey.petrov@email.ru</p>
+                <p>📊 Статус: Волонтёр в 3 организациях</p>
+                <p>✓ 12 участий в проектах</p>
+                <p>✓ 45 часов волонтёрства</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="/scripts/main.js"></script>
+</body>
+</html>
